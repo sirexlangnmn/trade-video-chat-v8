@@ -61,13 +61,13 @@ const port = process.env.PORT || 3000; // must be the same to client.js signalin
 const localHost = 'http://' + 'localhost' + ':' + port; // http
 
 const turnEnabled = process.env.TURN_ENABLED || 'true';
-const turnUrls = process.env.TURN_URLS || 'turn:turn.tradepearloftheorient.com';
+const turnUrls = process.env.TURN_URLS || 'turn:turn.allworldtrade.com';
 const turnUsername = process.env.TURN_USERNAME || 'guest';
 const turnCredential = process.env.TURN_PASSWORD || 'somepassword';
 
 // new - back up incase .env is not work properly
 // const turnEnabled = 'true';
-// const turnUrls = "turn:turn.tradepearloftheorient.com";
+// const turnUrls = "turn:turn.allworldtrade.com";
 // const turnUsername = "guest";
 // const turnCredential = "somepassword";
 
@@ -182,7 +182,7 @@ app.post(['/speechtranslator'], async (req, res) => {
 
 // old iceServers
 //const iceServers = [{ urls: 'stun:stun.l.google.com:19302' }];
-const iceServers = [{ urls: 'stun:stun.tradepearloftheorient.com' }];
+const iceServers = [{ urls: 'stun:stun.allworldtrade.com' }];
 
 if (turnEnabled == 'true') {
     iceServers.push({
