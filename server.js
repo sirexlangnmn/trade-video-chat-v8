@@ -51,6 +51,7 @@ const translate = require("@vitalets/google-translate-api");
 app.use(cors()); // Enable All CORS Requests for all origins
 app.use(compression()); // Compress all HTTP responses using GZip
 
+
 const http = require('http');
 const server = http.createServer(app);
 const { Server } = require('socket.io');
