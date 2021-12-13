@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>All World Trade Virtual Meeting Platform</title>
+    <!-- <link rel="shortcut icon" href="images/logo.svg" /> -->
+    <!-- <link rel="apple-touch-icon" href="images/logo.svg" /> -->
+    <link rel="stylesheet" href="css/landing.css" />
+    <link rel="stylesheet" href="css/newcall.css" />
+    <!-- https://ogp.me -->
+
+    <meta property="og:type" content="app-tvmp" />
+    <meta property="og:site_name" content="All World Trade Virtual Meeting Platform" />
+    <meta property="og:title" content="Copy the link and paste to Google or Firefox Browser to join this call." />
+    <meta property="og:description" content="All World Trade Virtual Meeting Platform" />
+
+    <!-- <meta property="og:image" content="/images/preview.png" /> -->
+    <meta property="og:url" content="https://meet.matrixcreationevents.com/" />
+</head>
+
+<body class="has-animations">
+    <div class="hero-content split-item-content center-content-mobile">
+        <h1 class="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="150">
+            Pick name. <br />
+            Share URL. <br />
+            Start conference.
+        </h1>
+        <p class="mt-0 mb-32 reveal-from-bottom" data-reveal-delay="300">
+            Each room has its own disposable URL. Just pick a room
+            name and share your custom URL. It's really that easy.
+        </p>
+    </div>
+
+    <div class="cta-slogan">
+        <h3 class="m-0">
+            Pick a room name.<br />
+            How about this one?
+        </h3>
+    </div>
+    <div class="cta-action">
+        <div class="mb-24">
+            <div class="form-group-desktop">
+                <input class="form-input" type="text" id="roomName" value="" />
+                <button class="button button-primary pulse"
+                    onclick="{window.location.href = '/groupcall/' + document.getElementById('roomName').value}">
+                    Join to room
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/landing.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/newroom.js"></script>
+</body>
+
+</html>
